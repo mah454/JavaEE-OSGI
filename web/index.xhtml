@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: mahsom
+  Date: 2/7/18
+  Time: 12:51 PM
+-->
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h:form enctype="multipart/form-data">
+        <p:fileUpload value="#{moduleBean.uploadedFile}" mode="simple" skinSimple="true"/>
+        <br/>
+        <p:commandButton value="Upload" ajax="false" action="#{moduleBean.upload()}"/>
+        <br/>
+        <p:commandButton value="Start" action="#{moduleBean.startBundle}"/>
+    </h:form>
+</h:body>
+
+</html>
